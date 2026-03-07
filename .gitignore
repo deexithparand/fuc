@@ -1,0 +1,53 @@
+# =========================
+# GO
+# =========================
+
+# Go build outputs
+bin/
+dist/
+build/
+
+# Test binaries
+*.test
+
+# Coverage files
+*.out
+coverage.out
+
+# OS files
+.DS_Store
+
+# =========================
+# TERRAFORM
+# =========================
+
+# Terraform working directory
+**/.terraform/*
+
+# Terraform state files
+*.tfstate
+*.tfstate.*
+
+# Crash logs
+crash.log
+
+# Sensitive variable files
+*.tfvars
+!terraform/environments/*/*.tfvars
+
+# Terraform lock file (optional to ignore)
+#.terraform.lock.hcl
+
+# =========================
+# IDE
+# =========================
+
+.vscode/
+.idea/
+
+# =========================
+# Misc
+# =========================
+
+*.log
+*.tmp
