@@ -4,6 +4,7 @@ Copyright © 2026 NAME HERE <EMAIL ADDRESS>
 package cmd
 
 import (
+	"fmt"
 	"os"
 
 	"github.com/spf13/cobra"
@@ -12,13 +13,24 @@ import (
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
 	Use:   "fuc",
-	Short: "A brief description of your application",
-	Long: `A longer description that spans multiple lines and likely contains
-examples and usage of using your application. For example:
+	Short: "Forge Your Cloud — spin up dev and prod environments instantly",
+	Long: `FUC (Forge Your Cloud) is a developer-focused CLI that helps you
+create, manage, and destroy infrastructure environments with minimal effort.
 
-Cobra is a CLI library for Go that empowers applications.
-This application is a tool to generate the needed files
-to quickly create a Cobra application.`,
+It provides a simple workflow to bootstrap containers, services,
+and environments like dev and prod using infrastructure as code.
+
+Whether you're testing locally or simulating production setups,
+FUC makes environment orchestration fast, reproducible, and simple.
+
+Examples:
+
+  fuc init           Initialize a FUC project
+  fuc up dev         Start the development environment
+  fuc up prod        Start the production environment
+  fuc down           Tear down running infrastructure
+  fuc shell          Access a running container
+`,
 	// Uncomment the following line if your bare application
 	// has an action associated with it:
 	// Run: func(cmd *cobra.Command, args []string) { },
@@ -33,7 +45,19 @@ func Execute() {
 	}
 }
 
+var banner = `
+███████╗██╗   ██╗ ██████╗
+██╔════╝██║   ██║██╔════╝
+█████╗  ██║   ██║██║     
+██╔══╝  ██║   ██║██║     
+██║     ╚██████╔╝╚██████╗
+╚═╝      ╚═════╝  ╚═════╝
+
+Forge Your Cloud
+`
+
 func init() {
+	fmt.Println(banner)
 	// Here you will define your flags and configuration settings.
 	// Cobra supports persistent flags, which, if defined here,
 	// will be global for your application.
