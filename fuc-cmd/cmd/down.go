@@ -11,7 +11,7 @@ import (
 	"github.com/spf13/cobra"
 )
 
-// upCmd represents the up command
+// downCmd represents the down command
 var downCmd = &cobra.Command{
 	Use:   "down",
 	Short: "Destroy infrastructure for a specified environment",
