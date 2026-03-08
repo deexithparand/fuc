@@ -1,9 +1,9 @@
 # assumed command
 
-# fuc up --env dev --distro apline --tag latest --count 3 --port 8000:80
+# loc up --env dev --distro apline --tag latest --count 3 --port 8000:80
                 # ✅            ✅            ✅           ✅         ✅  ✅
-# fuc down --env dev
-# fuc show ( show the stat of the containers )
+# loc down --env dev
+# loc show ( show the stat of the containers )
 
 # pull image from docker image module
 module "docker_images" {

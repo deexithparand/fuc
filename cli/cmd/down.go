@@ -5,7 +5,7 @@ package cmd
 
 import (
 	"fmt"
-	"fuc/fuc-cmd/cmd/utils"
+	"loc/cli/cmd/utils"
 	"os"
 
 	"github.com/spf13/cobra"
@@ -23,8 +23,8 @@ managed by Terraform.
 
 Examples:
 
-  fuc down dev
-  fuc down prod
+  loc down dev
+  loc down prod
 
 This command will safely tear down all resources associated
 with the selected environment.`,

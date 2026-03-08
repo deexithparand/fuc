@@ -1,4 +1,4 @@
-module fuc
+module loc
 
 go 1.25.4
 

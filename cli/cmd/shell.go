@@ -5,7 +5,7 @@ package cmd
 
 import (
 	"fmt"
-	"fuc/fuc-cmd/cmd/utils"
+	"loc/cli/cmd/utils"
 	"os"
 
 	"github.com/spf13/cobra"
@@ -16,7 +16,7 @@ var shellCmd = &cobra.Command{
 	Use:   "shell",
 	Short: "Open an interactive shell inside a running container",
 	Long: `The shell command allows you to open an interactive shell
-session inside one of the running containers managed by FUC.
+session inside one of the running containers managed by loc.
 
 It will display a list of active containers and prompt you
 to select the container you want to access. Once selected,
@@ -27,9 +27,9 @@ or executing commands directly within the container environment.
 
 Examples:
 
-  fuc shell
-  fuc shell dev [dev-container-name]
-  fuc shell prod [prod-container-name]
+  loc shell
+  loc shell dev [dev-container-name]
+  loc shell prod [prod-container-name]
 
 In interactive mode, you will be prompted to choose the container
 you want to access from the available running containers.`,

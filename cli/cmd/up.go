@@ -5,7 +5,7 @@ package cmd
 
 import (
 	"fmt"
-	"fuc/fuc-cmd/cmd/utils"
+	"loc/cli/cmd/utils"
 	"os"
 
 	"github.com/spf13/cobra"
@@ -23,8 +23,8 @@ the services defined in the configuration.
 
 Examples:
 
-  fuc up dev
-  fuc up prod
+  loc up dev
+  loc up prod
 
 This command ensures that all required resources are created and 
 running for the selected environment.`,
